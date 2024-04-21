@@ -35,6 +35,16 @@ export class UserDialogComponent {
           Validators.required,
           Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}'),
         ],
+      
+      ],
+
+      sanciones: [
+        '',
+        [
+          Validators.required,
+          Validators.pattern('^[0-9]*$'),
+        ],
+      
       ],
       role: ['USER', [Validators.required]],
     });

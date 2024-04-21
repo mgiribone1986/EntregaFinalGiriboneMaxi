@@ -12,8 +12,9 @@ export class AuthService {
       id: 1,
       createdAt: new Date(),
       email: 'email@mail.com',
-      firstName: 'goku',
-      lastName: 'son',
+      firstName: 'Maxi',
+      lastName: 'Giribone',
+      sanciones: 99,
       role: 'ADMIN',
     });
   }

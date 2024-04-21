@@ -38,25 +38,54 @@ export class Clase10Rxjs2Component implements OnInit, OnDestroy {
   cargando = false;
 
   getRoles(): Observable<string[]> {
-    return of(['ADMIN', 'USER', 'STUDENT', 'TEACHER']).pipe(delay(1500));
+    return of(['ADMIN', 'USER', 'ESTUDIANTE', 'PROFESOR']).pipe(delay(1500));
   }
 
   getUsers(): Observable<IUser[]> {
     const USERS_DB: IUser[] = [
       {
         id: 1,
-        firstName: 'Naruto',
-        lastName: 'Uzumaki',
-        email: 'naru@test.com',
+        firstName: 'Leo',
+        lastName: 'Matioli',
+        email: 'dead999@yahoo.com',
+        sanciones: 3,
         role: 'ADMIN',
         createdAt: new Date(),
       },
       {
         id: 2,
-        firstName: 'Sasuke',
-        lastName: 'Uchiha',
-        email: 'sasuke@test.com',
+        firstName: 'Roberto',
+        lastName: 'Carlos',
+        email: '1000000@friends.com',
+        sanciones: 3,
         role: 'USER',
+        createdAt: new Date(),
+      },
+      {
+        id: 3,
+        firstName: 'Marcos',
+        lastName: 'Sogtulakk',
+        email: 'sanitarios@acidos.com',
+        sanciones: 4,
+        role: 'USER',
+        createdAt: new Date(),
+      },
+      {
+        id: 4,
+        firstName: 'Mica',
+        lastName: 'Kitah',
+        email: 'micayosoy@instagramer.com',
+        sanciones: 5,
+        role: 'ESTUDIANTE',
+        createdAt: new Date(),
+      },
+      {
+        id: 5,
+        firstName: 'Dina',
+        lastName: 'Marca',
+        email: 'filosofiayletras@dana.dk',
+        sanciones: 5,
+        role: 'PROFESOR',
         createdAt: new Date(),
       },
     ];
@@ -112,8 +141,9 @@ export class Clase10Rxjs2Component implements OnInit, OnDestroy {
           id: 1,
           createdAt: new Date(),
           email: 'email@mail.com',
-          firstName: 'goku',
-          lastName: 'son',
+          firstName: 'Maxi',
+          lastName: 'Giribone',
+          sanciones: 99,
           role: 'ADMIN',
         });
       },
